@@ -1,7 +1,7 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { switchMap } from 'rxjs';
+import { switchMap, tap } from 'rxjs';
 import { CatalogDataService } from '../../services/catalog-data.service';
 
 @Component({
@@ -21,7 +21,7 @@ import { CatalogDataService } from '../../services/catalog-data.service';
       <a routerLink="/products" class="back-link">Volver al catalogo</a>
 
       <section class="detail-hero">
-        <figure class="detail-image">
+        <figure class="detail-image" tabindex="-1">
           <img [src]="product.image" [alt]="product.name">
         </figure>
 
@@ -66,10 +66,23 @@ import { CatalogDataService } from '../../services/catalog-data.service';
 export class ProductDetailComponent {
   private catalog = inject(CatalogDataService);
   private route = inject(ActivatedRoute);
+  private document = inject(DOCUMENT);
 
   product$ = this.route.paramMap.pipe(
-    switchMap((params) => this.catalog.getProduct(Number(params.get('id'))))
+    switchMap((params) => this.catalog.getProduct(Number(params.get('id')))),
+    tap(() => this.focusImageOnMobile())
   );
+
+  private focusImageOnMobile(): void {
+    if (!window.matchMedia('(max-width: 620px)').matches) return;
+
+    window.setTimeout(() => {
+      const image = this.document.querySelector<HTMLElement>('.detail-image');
+
+      image?.focus({ preventScroll: true });
+      image?.scrollIntoView({ block: 'start' });
+    });
+  }
 
   formatPrice(value: number): string {
     return new Intl.NumberFormat('es-AR', {

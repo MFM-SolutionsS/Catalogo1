@@ -65,12 +65,12 @@ const productsSeed: Product[] = [
   { id: 42, sku: 'MT-026', name: 'Ford Transit Supervan Taller', scale: '1:24', color: 'Azul', price: 38600, stock: 3, categoryId: 5, brandId: 4, rarity: 'Utility Display', image: 'assets/cars/FORD transit supervan.jpeg' },
   { id: 43, sku: 'MG-043', name: 'McLaren W1 Launch Edition', scale: '1:64', color: 'Gris', price: 21400, stock: 4, categoryId: 2, brandId: 2, rarity: 'New Model', image: 'assets/cars/McLAREN W1.webp' },
   { id: 44, sku: 'MG-044', name: 'McLaren W1 Naranja', scale: '1:64', color: 'Naranja', price: 21900, stock: 3, categoryId: 2, brandId: 2, rarity: 'Supercar', image: 'assets/cars/McLAREN W1 Naranja.webp' },
-  { id: 45, sku: 'MG-045', name: 'McLaren P1 Rojo', scale: '1:64', color: 'Rojo', price: 19600, stock: 5, categoryId: 2, brandId: 2, rarity: 'Hypercar', image: 'assets/cars/McLAREN P1 Rojo.jpg' },
+  { id: 45, sku: 'MG-045', name: 'McLaren P1 Rojo', scale: '1:64', color: 'Rojo', price: 19600, stock: 5, categoryId: 2, brandId: 2, rarity: 'Hypercar', image: 'assets/cars/McLAREN P1 Rojo.png' },
   { id: 46, sku: 'MG-046', name: 'McLaren P1 Negro', scale: '1:64', color: 'Negro', price: 19600, stock: 4, categoryId: 2, brandId: 2, rarity: 'Hypercar', image: 'assets/cars/McLAREN P1 Negro.jpg' },
   { id: 47, sku: 'MG-047', name: 'McLaren F1 Rojo', scale: '1:64', color: 'Rojo', price: 23200, stock: 2, categoryId: 2, brandId: 2, rarity: 'Legend', image: 'assets/cars/McLAREN F1 Rojo.jpg' },
   { id: 48, sku: 'MG-048', name: 'LaFerrari Roja', scale: '1:64', color: 'Rojo', price: 22500, stock: 3, categoryId: 2, brandId: 2, rarity: 'Exotic', image: 'assets/cars/Laferrari Roja.jpg' },
   { id: 49, sku: 'JL-049', name: '64 Chevy Chevelle SS Rojo', scale: '1:64', color: 'Rojo', price: 13700, stock: 6, categoryId: 3, brandId: 3, rarity: 'Muscle', image: "assets/cars/64' Chevy' CHEVELLE 55-Rojo.webp" },
-  { id: 50, sku: 'JL-050', name: '64 Chevy Chevelle SS Amarilla', scale: '1:64', color: 'Amarillo', price: 13700, stock: 6, categoryId: 3, brandId: 3, rarity: 'Muscle', image: "assets/cars/64' Chevy' CHEVELLE 55-Amarilla.webp" },
+  { id: 50, sku: 'JL-050', name: '64 Chevy Chevelle SS Amarilla', scale: '1:64', color: 'Amarillo', price: 13700, stock: 6, categoryId: 3, brandId: 3, rarity: 'Muscle', image: "assets/cars/64' Chevy' CHEVELLE 55-Amarilla.png" },
   { id: 51, sku: 'JL-051', name: '64 Chevy Chevelle Speed Blur', scale: '1:64', color: 'Grafica Speed Blur', price: 14900, stock: 4, categoryId: 3, brandId: 3, rarity: 'Speed Blur', image: "assets/cars/64' Chevy' CHEVELLE 55-SPEED BLUR tm.jpg" }
 ];
 
