@@ -47,14 +47,14 @@ import { Component } from '@angular/core';
         </div>
       </article>
       <article>
-        <img src="assets/cars/McLAREN P1 Rojo.jpg" alt="McLaren P1 rojo">
+        <img src="assets/cars/McLAREN P1 Rojo.png" alt="McLaren P1 rojo">
         <div>
           <span>Hypercar</span>
           <strong>McLaren P1 Rojo</strong>
         </div>
       </article>
       <article>
-        <img src="assets/cars/64' Chevy' CHEVELLE 55-Amarilla.webp" alt="Chevy Chevelle amarillo">
+        <img src="assets/cars/64' Chevy' CHEVELLE 55-Amarilla.png" alt="Chevy Chevelle amarillo">
         <div>
           <span>Muscle</span>
           <strong>Chevelle SS 64</strong>
