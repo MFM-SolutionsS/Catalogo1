@@ -1,0 +1,25 @@
+<header class="site-header">
+  <div class="brand-cluster">
+    <a routerLink="/" class="brand-link" aria-label="El Garaje de Pende">
+      <img src="assets/cars/logo-premiunm.png" alt="El Garaje de Pende" class="brand-logo">
+      <span>El Garaje de Pende</span>
+    </a>
+    <a routerLink="/cart" class="header-cart" aria-label="Ver carrito">
+      <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+        <path d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM4.2 4 5 6h15l-2 8H7.2L4.5 2H1v2h3.2Zm3.5 8-.9-4h10.6l-1 4H7.7Z" fill="currentColor" />
+      </svg>
+      <span>{{ cart.count() }}</span>
+    </a>
+  </div>
+
+  <nav class="site-nav">
+    <a routerLink="/products">Catalogo</a>
+    <a routerLink="/brands">Marcas</a>
+    <a routerLink="/categories">Series</a>
+    <a routerLink="/admin">Admin</a>
+  </nav>
+</header>
+
+<main class="shell">
+  <router-outlet />
+</main>

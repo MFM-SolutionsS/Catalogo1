@@ -1,0 +1,20 @@
+{
+  "name": "catalogo1",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run start --prefix frontend\" \"npm run dev --prefix backend\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "build:pages": "npm run build:pages --prefix frontend",
+    "start": "concurrently \"npm run preview --prefix frontend\" \"npm run start --prefix backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "dependencies": {
+    "catalogo1": "file:"
+  }
+}
